@@ -93,7 +93,7 @@
       args:
         chdir: "{{ release_path }}"
       environment:
-        REACT_APP_WEBSITE_PREFIX: Ansible
+        REACT_APP_WEBSITE_PREFIX: Ildar Zagidullin
 
     - name: Update Symlink
       file:
