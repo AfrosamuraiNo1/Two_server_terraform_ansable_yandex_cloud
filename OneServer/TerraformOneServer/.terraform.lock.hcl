@@ -20,3 +20,4 @@ provider "registry.terraform.io/yandex-cloud/yandex" {
     "zh:f0bea2311b568463fdbec6e4d316c0e97fe8ffdecd217c61befb848c1157c1b6",
   ]
 }
+

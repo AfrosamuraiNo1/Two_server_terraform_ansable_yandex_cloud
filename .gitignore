@@ -2,4 +2,5 @@ OneServer/TerraformOneServer/*.tfstate
 OneServer/TerraformOneServer/*.tfstate.*
 OneServer/TerraformOneServer/.terraform/
 OneServer/TerraformOneServer/*.terraform.*
+/OneServer/TerraformOneServer/.terraform.lock.hcl
 Thumbs.db
