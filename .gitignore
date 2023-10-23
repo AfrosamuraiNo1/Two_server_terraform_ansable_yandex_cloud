@@ -4,11 +4,11 @@ OneServer/TerraformOneServer/.terraform/
 OneServer/TerraformOneServer/*.terraform.*
 OneServer/TerraformOneServer/.terraform.lock.hcl
 OneServer/*.terraform
-Thumbs.db
 TwoServers/*.tfstate
 TwoServers/*.tfstate.*
 TwoServers/.terraform/
 TwoServers/*.terraform.*
 TwoServers/.terraform.lock.hcl
 TwoServers/*.terraform
+TwoServers/terraform.tfstate
 TwoServers/terraform.tfstate
