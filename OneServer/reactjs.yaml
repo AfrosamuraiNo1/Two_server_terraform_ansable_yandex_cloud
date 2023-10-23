@@ -3,7 +3,7 @@
 
   vars:
     project_path: /var/www
-    repositiry: https://gitlab.com/asomirl/skillbox-deploy-blue-green.git
+    repositiry: https://gitlab.com/devops9781228/homework-green-blue.git
 
 
   tasks:
@@ -32,15 +32,15 @@
         update_cache: yes
 
     - name: Install the packages YARN, NPM, NodeJS, Nginx
-      apt: 
-        pkg: 
+      apt:
+        pkg:
           - git
           - yarn
           - npm
           - nodejs
           - nginx
 
-    - name: Delete the html file 
+    - name: Delete the html file
       file:
         path: "{{ project_path }}/html"
         state: absent
