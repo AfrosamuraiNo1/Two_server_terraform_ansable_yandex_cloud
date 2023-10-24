@@ -14,7 +14,8 @@
 любого из вариантов сперва требуется внести данные в файл terraform.tfvars - "cloud_id, token, folder_id
 1)Создаем пару ключей - команда ssh keygen
 2)main.tf лежит в папках TerraformOneServer и TerraformTwoServers. Следовательно запуск командой terraform init должен осуществляться при
-нахождении в любой из этих папок
+нахождении в любой из этих папок. Перед запуском команды желательно вывести значения всех переменных такие как cloud_id, folder_id, token в отдельный
+файл с расширение tfvars (example.tfvars)
 3)Разворот инфраструктуры в облако - команда terraform apply
 4)Разворот react приложения на сервер при помощи ansible. Применяем ansible-playbook -b reactjs.yaml -vv
 

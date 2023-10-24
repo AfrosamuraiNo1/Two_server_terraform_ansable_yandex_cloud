@@ -1,3 +1,5 @@
+OneServer/*.tfstate
+OneServer/TerraformOneServer/*.tfvars
 OneServer/TerraformOneServer/*.tfstate
 OneServer/TerraformOneServer/*.tfstate.*
 OneServer/TerraformOneServer/.terraform/
@@ -12,3 +14,4 @@ TwoServers/.terraform.lock.hcl
 TwoServers/*.terraform
 TwoServers/terraform.tfstate
 TwoServers/terraform.tfstate
+TwoServers/terraform.tfvars
