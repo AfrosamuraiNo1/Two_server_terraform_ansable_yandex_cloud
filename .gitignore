@@ -14,4 +14,4 @@ TwoServers/.terraform.lock.hcl
 TwoServers/*.terraform
 TwoServers/terraform.tfstate
 TwoServers/terraform.tfstate
-TwoServers/terraform.tfvars
+TwoServers/*.tfvars
