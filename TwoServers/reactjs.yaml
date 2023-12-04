@@ -3,7 +3,6 @@
 
   vars:
     project_path: /var/www
-    repositiry: https://gitlab.com/asomirl/skillbox-deploy-blue-green.git
 
 
   tasks:
@@ -67,7 +66,7 @@
 
     - name: Clone the repository
       git:
-        repo: "{{ repositiry }}"
+        repo: "https://gitlab.com/alexkopenkinspb/skillbox-deploy-blue-green.git"
         dest: "{{ release_path }}"
 
 
@@ -93,7 +92,7 @@
       args:
         chdir: "{{ release_path }}"
       environment:
-        REACT_APP_WEBSITE_PREFIX: Ildar Zagidullin
+        REACT_APP_WEBSITE_PREFIX: Alex Kopenkin
 
     - name: Update Symlink
       file:

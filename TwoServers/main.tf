@@ -14,8 +14,8 @@ provider "yandex" {
   zone      = var.zone
 }
 
-data "yandex_compute_image" "my-ubuntu-2004-1" {
-  family = "ubuntu-2004-lts"
+data "yandex_compute_image" "fd89cudngj3s2osr228p" {
+  family = "ubuntu-2204-lts"
 }
 
 resource "yandex_compute_instance" "my-vm-2" {
@@ -30,7 +30,7 @@ resource "yandex_compute_instance" "my-vm-2" {
 
   boot_disk {
     initialize_params {
-      image_id = "${data.yandex_compute_image.my-ubuntu-2004-1.id}"
+      image_id = "${data.yandex_compute_image.fd89cudngj3s2osr228p.id}"
     }
   }
 
@@ -56,7 +56,7 @@ resource "yandex_compute_instance" "my-vm-3" {
 
   boot_disk {
     initialize_params {
-      image_id = "${data.yandex_compute_image.my-ubuntu-2004-1.id}"
+      image_id = "${data.yandex_compute_image.fd89cudngj3s2osr228p.id}"
     }
   }
 
@@ -70,13 +70,13 @@ resource "yandex_compute_instance" "my-vm-3" {
   }
 }
 
-resource "yandex_vpc_network" "default" {
-  name = "my-nw-2"
+resource "yandex_vpc_network" "my-nw-1" {
+  name = "my-nw-1"
 }
 
 resource "yandex_vpc_subnet" "my-sn-1" {
   zone           = "ru-central1-a"
-  network_id     = yandex_vpc_network.default.id
+  network_id     = yandex_vpc_network.my-nw-1.id
   v4_cidr_blocks = ["192.168.10.0/24"]
 }
 

@@ -1,3 +1,0 @@
-[frontend_servers]
-reactjs_1 ansible_host=51.250.84.146 wqansible_user=ubuntu ansible_ssh_private_key=~/.ssh/id_rsa
-reactjs_2 ansible_host=62.84.124.255 wqansible_user=ubuntu ansible_ssh_private_key=~/.ssh/id_rsa

@@ -4,10 +4,21 @@
 2)Установленный Terraform
 # sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 # wget -O- https://apt.releases.hashicorp.com/gpg | \gpg --dearmor | \sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
-# wget -O- https://apt.releases.hashicorp.com/gpg | \gpg --dearmor | \sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 # sudo apt update && sudo apt-get install terraform
 3) Установленный ansible и python3
 # sudo apt-get install python3 ansible ansible-core
+
+Для получения данных из яндекс клауда:
+# yc resource-manager cloud list - cloud_id
+
+# yc resource-manager --cloud-id <folder_id> folder list
+
+Не забудьте удалить сеть 
+
+# yc vpc network list
+
+# https://console.cloud.yandex.ru/folders/vpc/networks
+
 
 Описание процесса:
 В репозитории представлены 2 варанта: с одним сервером (каталог OneServer) и с двумя (каталог TwoServers). При использовании
